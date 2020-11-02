@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>MolGamma Store</title>
+
+    <meta charset="UTF-8" />
+    <meta name="author" content="DappHero" />
+    <meta name="description" content="DappHero" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img
+          alt="Logo"
+          src="//s3.amazonaws.com/appforest_uf/f1604255831559x230756504278428770/Artboard.png"
+          height="70"
+        />
+        <ul>
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li><a href="#">MolVault</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <h1>MolGamma Store</h1>
+      <br />
+      <p>
+        <button data-dh-feature="network" data-dh-property-enable="true">
+          Connect
+        </button>
+      </p>
+    </header>
+    <div>
+          <header>
+            <div
+              data-dh-feature="customContract"
+              data-dh-property-method-id="uVPR"
+              data-dh-property-auto-invoke="false"
+              data-dh-property-contract-name="MolGamma"
+              data-dh-property-method-name="mint"
+            >
+              <h3>Mint</mark></h3>
+              <section>
+                <aside>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Put on sale? 1 - yes, 0 - no"
+                      data-dh-property-method-id="uVPR"
+                      data-dh-property-input-name="forSale"
+                    />
+                  </section>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Purchase Price in Ξ"
+                      data-dh-property-method-id="uVPR"
+                      data-dh-property-input-name="ethPrice"
+                    />
+                  </section>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Metadata"
+                      data-dh-property-method-id="uVPR"
+                      data-dh-property-input-name="_tokenURI"
+                    />
+                  </section>
+
+                  <button
+                    data-dh-property-invoke="true"
+                    data-dh-property-method-id="uVPR"
+                  >
+                    mint
+                  </button>
+                </aside>
+              </section>
+            </div>
+          </header>
+          <header>
+            <div
+              data-dh-feature="customContract"
+              data-dh-property-method-id="0HqS"
+              data-dh-property-auto-invoke="false"
+              data-dh-property-contract-name="MolGamma"
+              data-dh-property-method-name="purchase"
+            >
+              <h3>Buy</mark></h3>
+              <section>
+                <aside>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Token ID"
+                      data-dh-property-method-id="0HqS"
+                      data-dh-property-input-name="tokenId"
+                    />
+                  </section>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Purchase Price in Ξ"
+                      data-dh-property-method-id="0HqS"
+                      data-dh-property-input-name="EthValue"
+                    />
+                  </section>
+
+                  <button
+                    data-dh-property-invoke="true"
+                    data-dh-property-method-id="0HqS"
+                  >
+                    purchase
+                  </button>
+                </aside>
+              </section>
+            </div>
+          </header>
+          <header>
+            <div
+              data-dh-feature="customContract"
+              data-dh-property-method-id="tDgb"
+              data-dh-property-auto-invoke="false"
+              data-dh-property-contract-name="MolGamma"
+              data-dh-property-method-name="updateSale"
+            >
+              <h3>Put on Sale</mark></h3>
+              <section>
+                <aside>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Purchase Price in Ξ"
+                      data-dh-property-method-id="tDgb"
+                      data-dh-property-input-name="ethPrice"
+                    />
+                  </section>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Token ID"
+                      data-dh-property-method-id="tDgb"
+                      data-dh-property-input-name="tokenId"
+                    />
+                  </section>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Put on Sale? 1 - yes, 0 - no"
+                      data-dh-property-method-id="tDgb"
+                      data-dh-property-input-name="forSale"
+                    />
+                  </section>
+
+                  <button
+                    data-dh-property-invoke="true"
+                    data-dh-property-method-id="tDgb"
+                  >
+                    updateSale
+                  </button>
+                </aside>
+              </section>
+            </div>
+          </header>
+          <header>
+            <div
+              data-dh-feature="customContract"
+              data-dh-property-method-id="6u4Y"
+              data-dh-property-auto-invoke="false"
+              data-dh-property-contract-name="MolGamma"
+              data-dh-property-method-name="tokenURI"
+            >
+              <h3>Link to Image</mark></h3>
+              <section>
+                <aside>
+                  <section>
+                    <input
+                      type="text"
+                      placeholder="Token ID"
+                      data-dh-property-method-id="6u4Y"
+                      data-dh-property-input-name="[0]"
+                    />
+                  </section>
+                  <div
+                    data-dh-property-method-id="6u4Y"
+                    data-dh-property-outputs="true"
+                  >
+                    <pre>Output...</pre>
+                  </div>
+
+                  <button
+                    data-dh-property-invoke="true"
+                    data-dh-property-method-id="6u4Y"
+                  >
+                    tokenURI
+                  </button>
+                </aside>
+              </section>
+            </div>
+          </header>
+        </section>
+      </header>
+    </div>
+    <script
+      id="dh-apiKey"
+      data-api="1604255795478x949654013386948600"
+      src="https://package.dapphero.io/main.js"
+    ></script>
+    <style>
+      form {
+        margin: 40px;
+      }
+    </style>
+
+    <script>
+      document.addEventListener(
+        "dappHeroConfigLoaded",
+        ({ detail: dappHero }) => {
+          // Inside here you can listen to any event you want
+          console.log("DappHero Has Loaded!");
+
+          // For projects with auto-invoked method, you will want to filter on events
+          // dappHero.listenToTransactionStatusChange(data => {
+          //   console.log("Listening to transtaction status change", data);
+          // });
+
+          // This is how you can listen to any events your smart contract emits
+          dappHero.listenToSmartContractBlockchainEvent((data) => {
+            console.log("The blockChain Events: ", data);
+          });
+
+          //This is an example method for alerting your users they are on the wrong network
+          //if(window.dappHero.provider.chainId !== 4){
+          //  alert("Wrong network! You should be on 4")
+          //}
+        }
+      );
+    </script>
+  </body>
+</html>
