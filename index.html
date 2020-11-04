@@ -125,6 +125,9 @@
       margin: 4px 2px;
     }
 
+	.wrap {
+      overflow: auto;
+    }
 
 /* MVP.css v1.6.2 - https://github.com/andybrewer/mvp */
 :root {
@@ -380,7 +383,7 @@
                       data-dh-property-input-name="[0]"
                     />
                   </section>
-                  <div
+                  <div class="wrap"
                     data-dh-property-method-id="6u4Y"
                     data-dh-property-outputs="true"
                   >
@@ -411,17 +414,18 @@
                         data-dh-property-input-name="[0]"
                       />
                       <p><i>1 = on sale, 0 = not on sale</i></p>
-                      <div
+                      "<div
                         data-dh-property-method-id="13ps"
                         data-dh-property-output-name="forSale">
                       <pre> ... </pre>
-                      </div>
+                      </div>"
                       <p><i>Purchase price in wei </i></br><a href="https://eth-converter.com/">(convert to Ξ)</a></p>
-                      <div
+                      "<div
                         data-dh-property-method-id="13ps"
                         data-dh-property-output-name="ethPrice">
 					  <pre> ... </pre>
-                      </div>
+                      </div>"
+                      </br>
                       <button class="loadSaleButton"
                         data-dh-property-invoke="true"
                         data-dh-property-method-id="13ps">
