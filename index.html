@@ -242,7 +242,12 @@
               data-dh-property-method-name="mint"
             >
               <p class="functionTitle">Mint</p>
-              <section>
+                <p id="mintTxLabel" style="visibility:hidden">Transaction ID:</p>
+                <div id="mintTransaction" style="visibility:hidden"
+                     data-dh-property-method-id="uVPR"
+                     data-dh-property-outputs="true">
+                </div>
+                <section>
                 <aside>
                   <section>
                     <input
@@ -268,12 +273,19 @@
                       data-dh-property-input-name="forSale"
                     />
                   </section>
-                  <button class="button mintButton"
+                  <button class="button mintButton" id="mintButton"
                     data-dh-property-invoke="true"
                     data-dh-property-method-id="uVPR"
                   >
                    👩‍💻
                   </button>
+
+                  <script type="text/javascript">
+                      document.getElementById("mintButton").onclick = function() {
+                        document.getElementById("mintTxLabel").style.visibility = "visible";
+                        document.getElementById("mintTransaction").style.visibility = "visible";
+                      }
+                  </script>
                 </aside>
               </section>
             </div>
@@ -287,7 +299,12 @@
               data-dh-property-method-name="purchase"
             >
               <p class="functionTitle">Buy</p>
-              <section>
+              <p id="buyTxLabel" style="visibility:hidden">Transaction ID:</p>
+              <div id="buyTransaction" style="visibility:hidden"
+                   data-dh-property-method-id="0HqS"
+                   data-dh-property-outputs="true">
+              </div>
+			  <section>
                 <aside>
                   <section>
                     <input
@@ -306,12 +323,19 @@
                     />
                   </section>
 
-                  <button class="buyButton"
+                  <button class="buyButton" id="buyButton"
                     data-dh-property-invoke="true"
                     data-dh-property-method-id="0HqS"
                   >
                     💳
                   </button>
+
+                  <script type="text/javascript">
+                      document.getElementById("buyButton").onclick = function() {
+                        document.getElementById("buyTxLabel").style.visibility = "visible";
+                        document.getElementById("buyTransaction").style.visibility = "visible";
+                      }
+                  </script>
                 </aside>
               </section>
             </div>
@@ -325,6 +349,11 @@
               data-dh-property-method-name="updateSale"
             >
               <p class="functionTitle">Put on Sale</p>
+              <p id="saleTxLabel" style="visibility:hidden">Transaction ID:</p>
+              <div id="saleTransaction" style="visibility:hidden"
+                   data-dh-property-method-id="tDgb"
+                   data-dh-property-outputs="true">
+              </div>
               <section>
                 <aside>
                   <section>
@@ -352,12 +381,19 @@
                     />
                   </section>
 
-                  <button class="putOnSaleButton"
+                  <button class="putOnSaleButton" id="saleButton"
                     data-dh-property-invoke="true"
                     data-dh-property-method-id="tDgb"
                   >
                     📢
                   </button>
+
+                  <script type="text/javascript">
+                      document.getElementById("saleButton").onclick = function() {
+                        document.getElementById("saleTxLabel").style.visibility = "visible";
+                        document.getElementById("saleTransaction").style.visibility = "visible";
+                      }
+                  </script>
                 </aside>
               </section>
             </div>
